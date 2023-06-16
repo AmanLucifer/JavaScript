@@ -1,9 +1,9 @@
 "use strict"; // use in all JS code as newer version
-//alert("Aman") we use this code in Web Browser, Not in Nodejs
+//alert("Aman") we use this code in Web Browser, Not in Nodejs 
 
 console.log(3
     +
-    5)  //cosw readbility that be high
+    5)  //code readbility that be high
 
 console.log("Aman")
 
