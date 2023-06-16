@@ -1,5 +1,5 @@
 "use strict"; // use in all JS code as newer version
-//alert("Aman") we use this code in Web Browser, Not 
+//alert("Aman") we use this code in Web Browser, Not in Nodejs
 
 console.log(3
     +
