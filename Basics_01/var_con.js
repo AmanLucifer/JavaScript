@@ -5,7 +5,6 @@ var userPhoneNumber = "9905442618"
 clearuserStates = "Bihar"
 let userCountry;
 
-
 //userId = 54321 / not  allowed
 
 userEmail ="demo@gmail.com"
@@ -19,5 +18,4 @@ console.table([userId, userEmail, userPassword, userPhoneNumber, userStates, use
 /* 
 prefer to not use var
 beacuse of issu in block scope and functional scope
-
 */
