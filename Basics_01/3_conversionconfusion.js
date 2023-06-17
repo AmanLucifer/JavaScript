@@ -29,5 +29,5 @@ console.log(alreadyjoin);
 
 let someNumber = 88
 let stringNumber = String(someNumber)
-console.log(stringNumber);
+console.log(stringNumber);    
 console.log( typeof stringNumber);
