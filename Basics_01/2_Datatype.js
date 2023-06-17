@@ -20,7 +20,7 @@ console.table([userName,userAge,userLogin,userLoaction,userState])
 
 //String ==> "Aman"
 //Number ==> 1,2,3,4 
-//bigint ==> for a big number og data
+//bigint ==> for a big number of data
 //boolean ==> True/False
 //null ==> standlon value  / null is also a object 
 //undefined ==> undefined
