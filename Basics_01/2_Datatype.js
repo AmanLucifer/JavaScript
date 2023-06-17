@@ -30,4 +30,4 @@ console.table([userName,userAge,userLogin,userLoaction,userState])
 
 console.log(typeof userAge)
 console.log(typeof null)
-console.log(typeof userState)
+console.log(typeof userState)   
