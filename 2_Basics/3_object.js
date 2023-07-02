@@ -32,4 +32,3 @@ firstobject.email = "ram@gmail.com"
 console.log(firstobject);
 
 //to check value in JS.
-
