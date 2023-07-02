@@ -45,4 +45,4 @@ console.log(objthree);
 console.log(Object.keys(micro));
 console.log(Object.values(micro));
 
-console.log(micro.hasOwnProperty('name'));
+console.log(micro.hasOwnProperty('name'));    
