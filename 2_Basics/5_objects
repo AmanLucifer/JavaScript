@@ -22,11 +22,11 @@ console.log(Teacher);
     This is JSON 
 }
 */
-{
-    "CourseName":"XYZ",
-    "CoursePrice": 99,
+// {
+//     "CourseName":"XYZ",
+//     "CoursePrice": 99,
 
-}
+// }
 //use there is a error.
 //store value in string.
 //https://api.github.com/users/amanlucifer
