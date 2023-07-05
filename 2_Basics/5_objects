@@ -1,0 +1,33 @@
+//Object de-structure 
+
+const course = {
+    courseName: "UMANG 2024",
+    coursePrice: 399,
+    courseTeacher: "Aman"
+}
+
+// const {courseTeacher} = course //name of courseTeacher is big how to resine it.
+const {courseTeacher: Teacher} = course //name of courseTeacher is big how to resine it.
+
+// console.log(courseTeacher);
+console.log(Teacher);
+
+//JSON API intro
+
+//IN past time API come into XML file.
+//But now API come INto JSON.
+
+/*
+{
+    This is JSON 
+}
+*/
+{
+    "CourseName":"XYZ",
+    "CoursePrice": 99,
+
+}
+//use there is a error.
+//store value in string.
+//https://api.github.com/users/amanlucifer
+
