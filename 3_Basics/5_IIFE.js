@@ -18,3 +18,6 @@
     console.log(`Connect TO DB ${name}`);
 } )("of google")
 
+
+// does JavaScript Code excute in 
+//In notes ya on this locacion    file:///C:/Users/mrama/Downloads/JS%20Exucetion%20contex.pdf
