@@ -66,4 +66,4 @@ console.log(value);
 
 const PriceofIcecrem = 50
 
-PriceofIcecrem > 20 ? console.log("Less than 50") : console.log("more than 50");
+PriceofIcecrem > 20 ? console.log("Less than 50") : console.log("more than 50");    
