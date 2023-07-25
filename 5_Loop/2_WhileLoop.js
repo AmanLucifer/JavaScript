@@ -24,7 +24,7 @@ while (arr < ThisArray.length) {
 let num = 0
 do {
     console.log(`value ${num}`);
-    num = num +1
+    num = num +1 
     
 } while (num <=5);
 
