@@ -13,7 +13,7 @@ const TotalNumber = number.reduce( function(acc,curr){
 
 
 // const TotalNumber = number.reduce((acc, curr) => acc + curr, 0)  
-
+   
 console.log(TotalNumber);
 
 //Heare is an example:

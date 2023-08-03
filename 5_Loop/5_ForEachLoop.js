@@ -84,4 +84,4 @@ const Buy = product.filter( (PF =>{
     return PF.ProcuctName === 'Sumsang'  && PF.Price === 8000
 }))
 
-// console.log(Buy);
+// console.log(Buy);   
