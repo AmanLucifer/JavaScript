@@ -85,3 +85,4 @@ const Buy = product.filter( (PF =>{
 }))
 
 // console.log(Buy);   
+
