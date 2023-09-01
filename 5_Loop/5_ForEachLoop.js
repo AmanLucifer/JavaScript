@@ -77,6 +77,7 @@ const product = [
     {ProcuctName: 'Sumsang', Price: 10000 , Ram: '4GB'},
     {ProcuctName: 'Realme', Price: 9000 , Ram: '4GB'},
     {ProcuctName: 'Realme', Price: 9000 , Ram: '2GB'},
+    {ProcuctName: 'Realme', Price: 9000 , Ram: '2GB'},
 ];
 
 
