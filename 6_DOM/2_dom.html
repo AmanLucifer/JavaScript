@@ -1,0 +1,114 @@
+<!-- very-vey simple project of DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM || Learning</title>
+    <style>
+
+            /* buld project CSS code start*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #444;
+            color: #fff;
+        }
+         #bulb{
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            border: solid 2px red;
+            background-color: white;
+
+        }
+        button{
+            height: 60px;
+            width: 60px;
+            margin-left: 50px;
+            margin-top: 40px;
+        } 
+        /* buld project CSS code start */
+
+
+
+        /* // diffrent between innerHTML and textContent */
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: #fff;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- buld project HTML code start -->
+    <div id="bulb">
+
+    </div>
+    <button>ON</button><br><br><br><br>
+    <!-- buld project HTML code start -->
+
+
+    <!-- // diffrent between innerHTML and textContent -->
+    <div id="box"></div>
+
+
+    <!-- select multipal Element at a same time -->
+
+
+    <h1>First Heading </h1>
+    <h1>Second Heading </h1>
+    <h1>third Heading </h1>
+    <h1>fourth Heading </h1>
+
+    <script>
+
+        // buld project js code start
+        let bulb = document.querySelector('#bulb')
+        let button = document.querySelector('button')
+        let check = 0
+
+        button.addEventListener('click', function(){
+        if (check == 0) {
+            bulb.style.backgroundColor = 'yellow'
+            button.innerHTML = 'OFF'
+            console.log('on');
+            check = 1
+        }else{
+            bulb.style.backgroundColor = 'White'
+            button.innerHTML = 'ON'
+            console.log('off');
+            check = 0
+            }
+        })
+
+        // buld project js code start
+        
+
+        // diffrent between innerHTML and textContent
+
+        let box = document.querySelector('#box')
+
+        box.innerHTML = '<h1>Hi i am aman</h1>'
+        box.textContent = '<h1>Hi i am aman</h1>'
+
+
+
+
+        // select multipal Element at a same time 
+
+        let heading = document.querySelectorAll('h1')
+
+        heading.forEach(function(sty){
+            sty.style.color = 'green'
+            sty.style.fontSize = '40px'
+
+        })
+
+    </script>
+</body>
+</html>
