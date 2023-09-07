@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #444;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       
+        
+        form{
+            margin-top: 20%;
+            margin-left: 40%;
+        }
+        #height{
+            width: 100px;
+            height: 25px;
+            border-radius: 8px;
+
+        }
+        #weight{
+            width: 100px;
+            height: 25px;
+            border-radius: 8px;
+
+        }
+        #Clculate{
+            font-size: 30px;
+            margin-left: 5%;
+            border-radius: 8px;
+        }
+        #result{
+            font-size: 30px;
+            margin-left: 10%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form>
+        <label>Height In cm <input type="number" name="" id="height"></label><br><br><br><br>
+        <label>weight In cm <input type="number" name="" id="weight"></label><br><br><br><br>
+
+        <button id="Clculate">Clculate</button>
+        <div id="result"></div>
+    </form>
+
+
+    
+    
+    <script>
+        let form = document.querySelector('form')
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+
+            let height = parseInt(document.querySelector('#height').Value)
+            let weight = parseInt(document.querySelector('#weight').Value)
+            let result = document.querySelector('#result')
+
+            if (height === ''|| height < 0 ) {
+                result.innerHTML = 'Please give a vailed Height'
+                
+            } else if ( weight === "" || weight < 0 ) {
+                result.innerHTML = 'Please give a vailed weight'
+                
+            }
+
+
+
+        })
+
+
+
+    </script>
+</body>
+</html>
