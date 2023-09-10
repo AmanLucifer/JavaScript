@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Instagram || Love</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #A0DAA9;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+
+        #Contaner{
+            height: 400px;
+            width: 300px;
+            border-radius: 8px;
+            background-color: #fff;
+            position: relative;
+    
+            
+        }
+
+        img{
+            height: 380px;
+            width: 280px;
+            object-fit: cover;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 8px;
+            
+
+        }
+        #Contaner i{
+            color: white;
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50% )scale(0);
+            opacity: 0.7;
+            transition: all ease 0.5s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="Contaner">
+        <img src="https://images.pexels.com/photos/3697811/pexels-photo-3697811.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+
+        <i class="ri-heart-fill"></i>
+    </div>
+<!-- java Script -->
+    <script>
+        let Contaner = document.querySelector('#Contaner')
+        let icon = document.querySelector('i')
+
+        Contaner.addEventListener('dblclick', function(){
+            icon.style.transform = 'translate(-50%,-50% )scale(1)'
+            icon.style.color = 'red'
+
+            setTimeout(function(){
+                icon.style.transform = 'translate(-50%,-50% )scale(0)'
+
+            },2000)
+        })
+
+
+
+    </script>
+</body>
+</html>
