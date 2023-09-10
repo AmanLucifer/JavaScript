@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #444;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+
+        }
+       
+        
+        form{
+            margin-top: 20%;
+            margin-left: 40%;
+        }
+        #height{
+            width: 100px;
+            height: 25px;
+            border-radius: 8px;
+
+        }
+        #weight{
+            width: 100px;
+            height: 25px;
+            border-radius: 8px;
+
+        }
+        #Clculate{
+            font-size: 30px;
+            margin-left: 5%;
+            border-radius: 8px;
+        }
+        #results{
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form>
+        <label>Height In CM <input type="text" name="" id="height"></label><br><br><br><br>
+        <label>Weight In KG <input type="text" name="" id="weight"></label><br><br><br><br>
+
+        <button id="Clculate">Clculate</button>
+        <!-- <div id="results"></div> -->
+    </form>
+    <div id="results"></div>
+
+
+    
+    
+<script>
+    const form = document.querySelector('form')
+
+    form.addEventListener('submit', function (e){
+        e.preventDefault();
+
+        const height = parseInt(document.querySelector('#height').value)
+        const weight = parseInt(document.querySelector('#weight').value)
+        const results = document.querySelector('#results')
+
+        if (height === '' || height < 0 || isNaN(height)) {
+            results.innerHTML = `This is no an valid height ${height}`
+        }else if (weight === '' || weight < 0 || isNaN(weight)) {
+            results.innerHTML = `This is no an valid weight ${weight}`
+        }else{
+            const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+
+            results.innerHTML = `${bmi}`
+        }
+    })
+</script>
+</body>
+</html>
