@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #141414;
+            color: #fff;
+        }
+       
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 20%;
+        }
+        img{
+            width: 20%;
+            height: 20%;
+            padding: 10px;
+        }
+        ul{
+            margin-left: 5%;
+        }
+        a{
+            font-size: 40px;
+            font-weight: 600;
+            color: chocolate;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body">
+
+    <div id="main">
+        <h1>Event Learning</h1>
+        <ul id="images">
+            <li>
+            <img src="https://images.pexels.com/photos/158053/fresh-orange-juice-squeezed-refreshing-citrus-158053.jpeg?auto=compress&cs=tinysrgb&w=600" alt="nature"  id="orange">
+           </li>
+           <li>
+        
+            <img src="https://media.istockphoto.com/id/1415862623/photo/outdoor-adventures-in-norway-hammock-relax-in-nature.jpg?b=1&s=612x612&w=0&k=20&c=11Vo2_8UvJIw2HRcnKWwV4u5KT_1g_42ffpsF7rIhrg=" alt="nature"  id="forest">
+           </li>
+           <li>
+            <!-- onclick="alert('This is forest') -->
+            <!-- not use this -->
+        
+            <img src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=600" alt="nature"  id="headphone">
+           </li>
+           <li>
+            <img src="https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&w=600" alt="nature"  id="flowerport">
+           </li>
+
+           <li>
+            <a id="google" href="https://www.google.com/">Google</a>
+           </li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+
+    // document.querySelector('#forest').onclick = function(){
+    //     alert('This is forest')
+    // }
+
+
+    // document.querySelector('#forest').addEventListener('click', function(e){
+    //     // alert('This is forest')
+
+    //     //event in inspact.
+    //      console.log(e)
+    // })
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log('Clicked on ul');
+    // }, false)  //event bugling (bydefult false. true.)
+
+
+    // document.querySelector('#headphone').addEventListener('click', function(e){
+    //     console.log('Clicked headphone');
+    //     //for not bubling use
+    //     e.stopPropagation()
+    // }, false)
+
+
+    // document.querySelector('#google').addEventListener('click', function(e){
+    //     console.log('Clicked on google');
+    //     e.stopPropagation()
+    //     e.preventDefault()
+
+
+    // })
+
+
+    // project 
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+
+        if (e.target.tagName === 'IMG') {
+            let removeit = e.target.parentNode
+        removeit.remove()
+
+            
+        }
+
+    })
+
+
+
+</script>
+</html>
