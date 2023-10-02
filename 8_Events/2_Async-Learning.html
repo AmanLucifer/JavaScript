@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Aman</h1>
+    <button id="stop">stop</button>
+
+
+    
+</body>
+<script>
+    // const message = function(){
+    //     document.querySelector('h1').innerHTML = "Welcome back"
+    // }
+    
+    // const stime = setTimeout(message, 3000)
+
+    // const stopbtn = document.querySelector('#stop')
+
+    // stopbtn.addEventListener('click', function(){
+    //     clearTimeout(stime)
+    //     console.log('stoped');
+    // })
+    
+    
+    let setin = setInterval(function(){
+        console.log("Helow");
+    }, 1000)
+
+    clearInterval(setin)
+
+
+</script>
+</html>
