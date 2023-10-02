@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <button id="stop">Stop</button> 
+    <button id="run">Run</button> 
+    
+</body>
+
+<script>
+    let heading = document.querySelector('h1')
+    let Stop = document.querySelector('#stop')
+    let Run = document.querySelector('#run')
+
+    const st = setTimeout(function(){
+        heading.innerHTML = "To my channel"
+    }, 2000)
+
+    Stop.addEventListener('click', function(){
+        clearTimeout(st)
+        console.log("Stoped");
+    })
+
+    Run.addEventListener('click', function(){
+        console.log("Run");
+        setTimeout(function(){
+            heading.innerHTML = "To my channel"
+        },2000)
+    })
+
+
+
+</script>
+</html>
