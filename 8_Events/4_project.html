@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Screen Colour || Changer</title>
+</head>
+<body>
+    <div id="main" style="position: relative; ">
+        <h1 style="text-align: center; font-size: 40px; font-family: 'Oswald', sans-serif;">Welcome to color changer</h1>
+
+        <div id="butten" style="left: 50%; top: 200%; position: absolute; transform: translate(-50%, -50%);">
+
+        <button id="start" style=" font-size: 20px; font-family: 'Oswald', sans-serif;">Start</button>
+        <button id="stop" style="font-size: 20px; font-family: 'Oswald', sans-serif;">Stop</button>
+    </div>
+    </div>
+    
+</body>
+
+<script>
+
+    //generated random colour
+    const randomcolor = function(){
+        let hex = '0123456789ABCDEF'
+        let color = '#'
+        for( let i = 0; i < 6; i++ ){
+            color += hex[Math.floor(Math.random() * 16)]
+
+        }
+        return color
+    }
+
+    // console.log(randomcolor());
+
+    //////////////////////////////////
+
+
+const startchangingcolor = document.querySelector('#start')
+const stopchangingcolor = document.querySelector('#stop')
+let stopedcolor;
+
+
+
+startchangingcolor.addEventListener('click', function(){
+
+    if (stopedcolor == null) {
+        stopedcolor = setInterval(function(){
+        document.body.style.backgroundColor = randomcolor()
+
+    },1000)
+        
+    }
+
+   
+    
+})
+
+stopchangingcolor.addEventListener('click', function(){
+    clearInterval(stopedcolor)
+    stopedcolor = null
+})
+
+
+
+</script>
+</html>
