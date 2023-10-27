@@ -61,15 +61,38 @@ PromiseFour.then(function (user) {
     })
 
 
-fetch('https://api.github.com/users/AmanLucifer')
-    .then((responce) => {
-        const data = responce.json()
-        return data
-    })
-    .then((data) => {
-        console.log(data.id);
-    })
-    .catch(() => {
-        console.log("Err");
-    })
-   
+// fetch('https://api.github.com/users/AmanLucifer')
+//     .then((responce) => {
+//         const data = responce.json()
+//         return data
+//     })
+//     .then((data) => {
+//         console.log(data.id);
+//     })
+//     .catch(() => {
+//         console.log("Err");
+//     })
+
+
+
+
+
+
+
+
+
+fetch("https://api.github.com/users/AmanLucifer")
+
+.then((responce) => {
+    const data = responce.json()
+    return data
+})
+
+.then((data) =>{
+    console.log(data.name);
+})
+
+// .catch((data) =>{
+//     console.log("err");
+
+// })
